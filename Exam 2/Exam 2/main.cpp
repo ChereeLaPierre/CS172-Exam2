@@ -139,28 +139,28 @@ int main()
         cout << "ERROR: Seattle has the wrong population size" << endl;;
     }
     
-//    vector<Citizen*> blueLovers = spokane->getCitizensForFavoriteColor("Blue");
-//    if (blueLovers.size() != 2)
-//    {
-//        errors++;
-//        cout << "ERROR: wrong number of blue lovers in Spokane " << endl;
-//    }
-//    
-//    vector<Citizen*> greenLovers = katchem->getCitizensForFavoriteColor("Green");
-//    if (greenLovers.size() != 1)
-//    {
-//        errors++;
-//        cout << "ERROR: wrong number of green lovers in Katchem " << endl;
-//    }
-//    else
-//    {
-//        Citizen* greenlover = greenLovers.at(0);
-//        if (greenlover->getLastName() != "Andre" && greenlover->getLastName() != "Bartley")
-//        {
-//            errors++;
-//            cout << "ERROR: The green lover was wrong" << endl;
-//        }
-//    }
+    vector<Citizen*> blueLovers = spokane->getCitizensForFavoriteColor("Blue");
+    if (blueLovers.size() != 2)
+    {
+        errors++;
+        cout << "ERROR: wrong number of blue lovers in Spokane " << endl;
+    }
+    
+    vector<Citizen*> greenLovers = katchem->getCitizensForFavoriteColor("Green");
+    if (greenLovers.size() != 1)
+    {
+        errors++;
+        cout << "ERROR: wrong number of green lovers in Katchem " << endl;
+    }
+    else
+    {
+        Citizen* greenlover = greenLovers.at(0);
+        if (greenlover->getLastName() != "Andre" && greenlover->getLastName() != "Bartley")
+        {
+            errors++;
+            cout << "ERROR: The green lover was wrong" << endl;
+        }
+    }
     
     cout << "ERROR COUNT: " << errors << ".\n";
     cout << "Be sure to run this 3 times and be sure that on the 2nd and 3rd run you get 1 SUCCESS." << endl;

@@ -52,7 +52,8 @@ private:
     string newCityName;
     int id;
     int population;
-    vector<Citizen> citizens;
+    string citizen;
+    vector<Citizen*> citizens;
     
 };
 

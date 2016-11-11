@@ -57,7 +57,7 @@ void City::addCitizen(Citizen* citizen)
 }
 
 // Return citizen with given id
-Citizen* getCitizenWithId(int id)
+Citizen* City::getCitizenWithId(int id)
 {
     return 0;
 }
@@ -70,7 +70,7 @@ vector<Citizen*> City::getCitizensForFavoriteColor(string color)
 //            return vector<Citizen>
 //    }
 //
-    
+    return citizens;
 }
 
 
